@@ -1,0 +1,106 @@
+*
+{
+    padding:0;
+    margin:0;
+
+}
+body
+{
+    background: linear-gradient(rgb(70, 3, 70),rgb(19, 6, 55));
+    height:100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header
+{
+    position: fixed;
+    width:85%;
+    display:flex;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    margin:30px;
+}
+header ul
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+}
+header li
+{
+    margin-right: 30px;
+}
+header  li a
+{
+   padding:6px 15px;
+   border-radius: 20px;
+}
+header ul li a:hover,
+.active
+{
+    color:blue;
+    background: #fff;
+}
+header a
+{
+    text-decoration: none;
+    color:#fff;
+}
+header .logo
+{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.main
+{
+    position:relative;
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main img
+{
+    position: absolute;
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+}
+#moon
+{
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+}
+.main::after
+{
+    content: "";
+    position: absolute;
+    bottom:0;
+    height:100px;
+    width:100%;
+    background:linear-gradient(to top,rgb(70, 3, 70),transparent);
+}
+.main .nouvil
+{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 30px;
+    transform: translateY(-140px);
+}
+.content
+{
+    color:#fff;
+    padding:30px;
+}
+.content h2
+{
+    font-size: 30px;
+    margin: 20px;
+}
+.content p
+{
+    margin: 20px;
+}
